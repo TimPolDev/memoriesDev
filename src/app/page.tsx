@@ -69,7 +69,6 @@ function GameApp() {
           <Game roomId={currentRoom} onLeave={handleLeaveGame} />
         )}
 
-        {console.log('📊 [GameApp] showStats value:', showStats)}
         {showStats && <StatsPanel onClose={() => {
           console.log('📊 [GameApp] StatsPanel onClose called');
           setShowStats(false);
